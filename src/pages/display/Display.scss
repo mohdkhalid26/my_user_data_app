@@ -1,0 +1,83 @@
+@import '~bootstrap/scss/bootstrap';
+.display{
+            min-width: 100%;
+                max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+h1{
+    margin: 14px;
+}
+.deleteallbtn, .createbtn{
+    margin: 7px;
+}
+.table{
+    margin: 14px;
+        width: 92vw;
+}
+    p{
+    word-break: break-all;
+}
+.td, .th{
+    padding: 4px;
+    text-align: center;
+}
+
+.th{
+    font-size: medium;
+}
+.td button{
+    font-size: small;
+}
+.tr, .th, .td{
+    border: 1px solid gray;
+}
+}
+$breakpoint-tablet: 430px;
+@media only screen and (max-width: $breakpoint-tablet) {
+ .display{    
+     .th{
+         font-size: small;
+        }       
+    .td, .td button{
+         font-size: x-small;
+        }
+        .td button{
+        padding: 4px;
+    }
+    }
+      }
+      $breakpoint-tablet: 330px;
+    @media only screen and (max-width: $breakpoint-tablet) {
+ .display{
+ .th{
+    font-size: x-small;
+ }       
+    .td, .td button{
+         font-size: xx-small;
+        }
+    .td button{
+        padding: 3px;
+    }
+    }
+      }
+      $breakpoint-tablet: 290px;
+    @media only screen and (max-width: $breakpoint-tablet) {
+ .display{
+    .table{
+        width: 81vw;
+    }
+ .th{
+    font-size: xx-small;
+ }       
+    .td, .td button{
+         font-size: xx-small;
+        }
+    .td button{
+        padding: 3px;
+    }
+    }
+      }
+        
